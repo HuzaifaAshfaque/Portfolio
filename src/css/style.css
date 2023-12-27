@@ -276,6 +276,7 @@ section {
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  margin-top: 3rem;
 }
 
 .about-containers,
@@ -318,6 +319,7 @@ section {
 
 #experience {
   position: relative;
+  margin-top: 3rem;
 }
 
 .experience-sub-title {
@@ -357,6 +359,7 @@ article .icon {
 
 #projects {
   position: relative;
+  margin-top: 5rem;
   
 }
 
