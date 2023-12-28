@@ -1,6 +1,8 @@
 import aboutImg from "../assets/about-pic.png";
 import experienceImg from "../assets/experience.png";
 import educationImg from "../assets/education.png";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const About = ({ arrowImg }) => {
   return (
@@ -22,8 +24,8 @@ const About = ({ arrowImg }) => {
                 />
                 <h3>Experience</h3>
                 <p>
-                  6+ months <br />
-                  Fullstack Development
+                  Fresher  <br />
+                  Fullstack Development 
                 </p>
               </div>
               <div className="details-container">
@@ -50,12 +52,13 @@ const About = ({ arrowImg }) => {
             </div>
           </div>
         </div>
+        <ScrollLink to="experience" smooth={true} duration={500}>
         <img
           src={arrowImg}
           alt="Arrow icon"
           className="icon arrow"
-          onClick="location.href='./#experience'"
         />
+        </ScrollLink>
       </section>
     </>
   );

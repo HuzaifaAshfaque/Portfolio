@@ -1,6 +1,8 @@
 import ProjectImg1 from "../assets/project-1.png"
 import ProjectImg2 from "../assets/project-2.png"
 import ProjectImg3 from "../assets/project-3.png"
+import { Link as ScrollLink } from 'react-scroll';
+
 
 
 const Projects =({handleOpenGithub,arrowImg})=>{
@@ -89,12 +91,13 @@ const Projects =({handleOpenGithub,arrowImg})=>{
             </div>
           </div>
         </div>
+        <ScrollLink to="contact" smooth={true} duration={500}>
         <img
           src={arrowImg}
           alt="Arrow icon"
           className="icon arrow"
-          onClick="location.href='./#contact'"
         />
+        </ScrollLink>
       </section>
     );
 }

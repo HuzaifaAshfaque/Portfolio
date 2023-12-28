@@ -30,6 +30,7 @@ const Profile = ({handleOpenGithub,linkedinImg,handleOpenLinkedIn}) => {
           <p className="section__text__p1">Hello, I'm</p>
           <h1 className="title">Huzaifa Ashfaque</h1>
           <p className="section__text__p2">Fullstack Developer</p>
+          <p className="section__text__p2">I am currently doing an apprentice at Techpile</p>
           <div className="btn-container">
             <button
               className="btn btn-color-2"

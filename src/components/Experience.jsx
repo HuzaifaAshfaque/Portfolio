@@ -1,4 +1,5 @@
 import checkmarkImg from "../assets/checkmark.png"
+import { Link as ScrollLink } from 'react-scroll';
 
 
 const Experience = ({arrowImg}) => {
@@ -153,12 +154,14 @@ const Experience = ({arrowImg}) => {
             </div>
           </div>
         </div>
+        <ScrollLink to="projects" smooth={true} duration={500}>
         <img
           src={arrowImg}
           alt="Arrow icon"
           className="icon arrow"
-          onClick="location.href='./#projects'"
         />
+       </ScrollLink>
+        
       </section>
     </>
   );
