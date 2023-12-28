@@ -15,15 +15,19 @@ function App() {
     window.open(githubUrl, "_blank");
   };
 
+  const handleOpenLinkedIn = () => {
+    const linkedInUrl = 'https://www.linkedin.com/in/huzaifa-ashfaque-b3a16825a/';
+    window.open(linkedInUrl, '_blank');
+  };
   return (
     <>
       <div>
         <Navbar />
-        <Profile handleOpenGithub={handleOpenGithub} linkedinImg={linkedinImg} />
+        <Profile handleOpenGithub={handleOpenGithub} linkedinImg={linkedinImg} handleOpenLinkedIn={handleOpenLinkedIn}/>
         <About arrowImg={arrowImg} />
         <Experience arrowImg={arrowImg}/>
         <Projects handleOpenGithub={handleOpenGithub} arrowImg={arrowImg} />
-        <Contact linkedinImg={linkedinImg}/>
+        <Contact linkedinImg={linkedinImg} handleOpenLinkedIn={handleOpenLinkedIn}/>
         <Footer />
       </div>
     </>

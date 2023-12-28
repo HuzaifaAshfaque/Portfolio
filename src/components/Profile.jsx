@@ -3,7 +3,7 @@ import githubImg from "../assets/github.png"
 import resumePDF from '../assets/resume.pdf';
 
 
-const Profile = ({handleOpenGithub,linkedinImg}) => {
+const Profile = ({handleOpenGithub,linkedinImg,handleOpenLinkedIn}) => {
   /**
    * The function `resume` opens a new window with the resume.
    */
@@ -15,13 +15,7 @@ const Profile = ({handleOpenGithub,linkedinImg}) => {
     window.open(resumePath, '_blank');
   };
 
-  const handleOpenLinkedIn = () => {
-    // Specify your LinkedIn profile URL
-    const linkedInUrl = 'https://www.linkedin.com/in/huzaifa-ashfaque-b3a16825a/';
-
-    // Use window.open to open the LinkedIn profile in a new tab
-    window.open(linkedInUrl, '_blank');
-  };
+  
 
 
   return (

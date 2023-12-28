@@ -1,6 +1,6 @@
 import emailImg from '../assets/email.png'
 
-const Contact =({linkedinImg})=>{
+const Contact =({linkedinImg,handleOpenLinkedIn})=>{
     return(
         <>
         <section id="contact">
@@ -24,7 +24,7 @@ const Contact =({linkedinImg})=>{
                 className="icon contact-icon"
               />
               <p>
-                <a href="https://www.linkedin.com">LinkedIn</a>
+                <a href='/' onClick={handleOpenLinkedIn}>LinkedIn</a>
               </p>
             </div>
           </div>
