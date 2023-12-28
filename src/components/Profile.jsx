@@ -1,6 +1,8 @@
 import profileImg from "../assets/profile-pic.png"
 import githubImg from "../assets/github.png"
 import resumePDF from '../assets/resume.pdf';
+import { Link as ScrollLink } from 'react-scroll';
+
 
 
 const Profile = ({handleOpenGithub,linkedinImg,handleOpenLinkedIn}) => {
@@ -37,9 +39,10 @@ const Profile = ({handleOpenGithub,linkedinImg,handleOpenLinkedIn}) => {
             </button>
             <button
               className="btn btn-color-1"
-              onClick="location.href='./#contact'"
             >
-              Contact Info
+              <ScrollLink to="contact" smooth={true} duration={500}>
+                Contact info
+              </ScrollLink>
             </button>
           </div>
           <div id="socials-container">

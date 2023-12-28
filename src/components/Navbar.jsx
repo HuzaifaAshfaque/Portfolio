@@ -1,28 +1,43 @@
+import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+
 const Navbar = () => {
-    function toggleMenu() {
-        const menu = document.querySelector(".menu-links");
-        const icon = document.querySelector(".hamburger-icon");
-        menu.classList.toggle("open");
-        icon.classList.toggle("open");
-      }
-      
+  function toggleMenu() {
+    const menu = document.querySelector('.menu-links');
+    const icon = document.querySelector('.hamburger-icon');
+    menu.classList.toggle('open');
+    icon.classList.toggle('open');
+  }
+
   return (
     <>
       <nav id="desktop-nav">
-        <div className="logo">Huzaifa Ashfaque</div>
+        <div className="logo">
+        <ScrollLink to="/" smooth={true} duration={300}>
+                Huzaifa Ashfaque
+        </ScrollLink>
+          </div>
         <div>
           <ul className="nav-links">
             <li>
-              <a href="#about">About</a>
+              <ScrollLink to="about" smooth={true} duration={300}>
+                About
+              </ScrollLink>
             </li>
             <li>
-              <a href="#experience">Experience</a>
+              <ScrollLink to="experience" smooth={true} duration={300}>
+                Experience
+              </ScrollLink>
             </li>
             <li>
-              <a href="#projects">Projects</a>
+              <ScrollLink to="projects" smooth={true} duration={300}>
+                Projects
+              </ScrollLink>
             </li>
             <li>
-              <a href="#contact">Contact</a>
+              <ScrollLink to="contact" smooth={true} duration={300}>
+                Contact
+              </ScrollLink>
             </li>
           </ul>
         </div>
@@ -37,24 +52,24 @@ const Navbar = () => {
           </div>
           <div className="menu-links">
             <li>
-              <a href="#about" onClick={toggleMenu}>
+              <ScrollLink to="about" smooth={true} duration={500} onClick={toggleMenu}>
                 About
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#experience" onClick={toggleMenu}>
+              <ScrollLink to="experience" smooth={true} duration={500} onClick={toggleMenu}>
                 Experience
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#projects" onClick={toggleMenu}>
+              <ScrollLink to="projects" smooth={true} duration={500} onClick={toggleMenu}>
                 Projects
-              </a>
+              </ScrollLink>
             </li>
             <li>
-              <a href="#contact" onClick={toggleMenu}>
+              <ScrollLink to="contact" smooth={true} duration={500} onClick={toggleMenu}>
                 Contact
-              </a>
+              </ScrollLink>
             </li>
           </div>
         </div>
@@ -62,6 +77,5 @@ const Navbar = () => {
     </>
   );
 };
-
 
 export default Navbar;

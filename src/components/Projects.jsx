@@ -4,6 +4,11 @@ import ProjectImg3 from "../assets/project-3.png"
 
 
 const Projects =({handleOpenGithub,arrowImg})=>{
+
+  const openProject = () => {
+    const githubUrl = "https://github.com/HuzaifaAshfaque/favcart";
+    window.open(githubUrl, "_blank");
+  };
     return (
     <section id="projects">
         <p className="section__text__p1">Browse My Recent</p>
@@ -28,7 +33,7 @@ const Projects =({handleOpenGithub,arrowImg})=>{
                 </button>
                 <button
                   className="btn btn-color-2 project-btn"
-                  onClick={handleOpenGithub}
+                  onClick={openProject}
                 >
                   Live Demo
                 </button>

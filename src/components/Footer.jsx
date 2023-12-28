@@ -1,3 +1,6 @@
+import React from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+
 const Footer = () => {
   return (
     <>
@@ -6,16 +9,24 @@ const Footer = () => {
           <div className="nav-links-container">
             <ul className="nav-links">
               <li>
-                <a href="#about">About</a>
+                <ScrollLink to="about" smooth={true} duration={500}>
+                  About
+                </ScrollLink>
               </li>
               <li>
-                <a href="#experience">Experience</a>
+                <ScrollLink to="experience" smooth={true} duration={500}>
+                  Experience
+                </ScrollLink>
               </li>
               <li>
-                <a href="#projects">Projects</a>
+                <ScrollLink to="projects" smooth={true} duration={500}>
+                  Projects
+                </ScrollLink>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <ScrollLink to="contact" smooth={true} duration={500}>
+                  Contact
+                </ScrollLink>
               </li>
             </ul>
           </div>
@@ -25,4 +36,5 @@ const Footer = () => {
     </>
   );
 };
+
 export default Footer;
