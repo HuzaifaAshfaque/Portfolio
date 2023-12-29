@@ -8,19 +8,15 @@ const projectSlice = createSlice({
             return store;
         },
         githubFetch: (store, action) => {
-            const projectId = action.payload; 
+            const { projectId, linkType } = action.payload;
             const project = store.find(item => item.id === projectId);
-            if (project) {
-              window.open(project.githubLink, "_blank");
+            if (project && project.links[linkType]) {
+               window.open(project.links[linkType], "_blank");
+            } else {
+               console.error(`Link type ${linkType} not found for project with id ${projectId}.`);
             }
-        },
-        githubProjectFetch: (store, action) => {
-            const projectId = action.payload; 
-            const project = store.find(item => item.id === projectId);
-            if (project) {
-              window.open(project.projectLink, "_blank");
-            }
-        },
+         },
+         
     }
 })
 

@@ -2,20 +2,15 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { projectActions } from '../store/Project';
 
-const ProjectItems = ({project}) => {
-    console.log(project.projectimg)
-    const dispatch = useDispatch();
+const ProjectItems = ({ project }) => {
+  console.log(project.projectimg);
+  const dispatch = useDispatch();
 
-    const handleGithubFetch = () => {
-        dispatch(projectActions.githubFetch(project.id));
-      };
-
-    const handleProjectFetch = () => {
-        dispatch(projectActions.githubProjectFetch(project.id));
-      };
+  const handleFetch = (linkType) => {
+    dispatch(projectActions.githubFetch({ projectId: project.id, linkType }));
+  };
 
   return (
-
     <>
       <div className="details-container color-container">
         <div className="article-container">
@@ -25,13 +20,13 @@ const ProjectItems = ({project}) => {
         <div className="btn-container">
           <button
             className="btn btn-color-2 project-btn"
-              onClick={handleGithubFetch}
+            onClick={() => handleFetch('github')}
           >
             Github
           </button>
           <button
             className="btn btn-color-2 project-btn"
-              onClick={handleProjectFetch}
+            onClick={() => handleFetch('project')}
           >
             Live Demo
           </button>

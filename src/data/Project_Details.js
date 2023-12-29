@@ -1,10 +1,45 @@
 const Project_Details = [
     {
         id:1,
-        projectimg:'/assets/project-1.png',
+        projectimg:'/project-1.png',
         projectname:'Favcart',
-        githubLink:'https://github.com/HuzaifaAshfaque',
-        projectLink:'https://github.com/HuzaifaAshfaque/favcart'
+        links: {
+            github: 'https://github.com/HuzaifaAshfaque',
+            project: 'https://github.com/HuzaifaAshfaque/favcart',
+         },
+
+    },
+    {
+        id:2,
+        projectimg:'/project-2.png',
+        projectname:'Anime',
+        links: {
+            github: 'https://github.com/HuzaifaAshfaque',
+            project: 'https://github.com/HuzaifaAshfaque/Anime',
+         },
+         
+
+    },
+    {
+        id:3,
+        projectimg:'/project-3.png',
+        projectname:'Portfolio',
+        links: {
+            github: 'https://github.com/HuzaifaAshfaque',
+            project: 'https://github.com/HuzaifaAshfaque/Portfolio',
+         },
+         
+
+    },
+    {
+        id:4,
+        projectimg:'/project-3.png',
+        projectname:'Scrapper',
+        links: {
+            github: 'https://github.com/HuzaifaAshfaque',
+            project: 'https://github.com/HuzaifaAshfaque/Scrapper',
+         },
+         
 
     }
 ]

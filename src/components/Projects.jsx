@@ -1,7 +1,5 @@
-
 import { Link as ScrollLink } from 'react-scroll';
 import { useDispatch, useSelector } from "react-redux";
-import { projectActions } from "../store/Project";
 import ProjectItems from "./ProjectItems";
 
 
