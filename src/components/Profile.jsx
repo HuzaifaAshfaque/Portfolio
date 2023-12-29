@@ -6,14 +6,8 @@ import { Link as ScrollLink } from 'react-scroll';
 
 
 const Profile = ({handleOpenGithub,linkedinImg,handleOpenLinkedIn}) => {
-  /**
-   * The function `resume` opens a new window with the resume.
-   */
   const handleViewResume = () => {
-    // Specify the path to your resume file in the assets folder
     const resumePath = resumePDF
-
-    // Use window.open to open the PDF in a new tab
     window.open(resumePath, '_blank');
   };
 

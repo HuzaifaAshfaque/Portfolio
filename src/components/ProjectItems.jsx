@@ -3,7 +3,6 @@ import { useDispatch } from 'react-redux';
 import { projectActions } from '../store/Project';
 
 const ProjectItems = ({ project }) => {
-  console.log(project.projectimg);
   const dispatch = useDispatch();
 
   const handleFetch = (linkType) => {

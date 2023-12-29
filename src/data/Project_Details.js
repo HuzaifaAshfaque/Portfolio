@@ -33,7 +33,7 @@ const Project_Details = [
     },
     {
         id:4,
-        projectimg:'/project-3.png',
+        projectimg:'/project-4.png',
         projectname:'Scrapper',
         links: {
             github: 'https://github.com/HuzaifaAshfaque',

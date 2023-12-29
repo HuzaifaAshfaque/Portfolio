@@ -376,6 +376,7 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  border: 2px solid rgb(79, 78, 78);
 }
 
 .project-title {
