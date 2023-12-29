@@ -26,7 +26,7 @@ function App() {
         <Profile handleOpenGithub={handleOpenGithub} linkedinImg={linkedinImg} handleOpenLinkedIn={handleOpenLinkedIn}/>
         <About arrowImg={arrowImg} />
         <Experience arrowImg={arrowImg}/>
-        <Projects handleOpenGithub={handleOpenGithub} arrowImg={arrowImg} />
+        <Projects arrowImg={arrowImg} />
         <Contact linkedinImg={linkedinImg} handleOpenLinkedIn={handleOpenLinkedIn}/>
         <Footer />
       </div>
