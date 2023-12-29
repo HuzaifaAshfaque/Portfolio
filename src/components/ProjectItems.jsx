@@ -13,7 +13,8 @@ const ProjectItems = ({ project }) => {
     <>
       <div className="details-container color-container">
         <div className="article-container">
-          <img src={project.projectimg} alt="Project 1" className="project-img" />
+        <img src={`${import.meta.env.BASE_URL}${project.projectimg}`} alt="Project 1" className="project-img" />
+
         </div>
         <h2 className="experience-sub-title project-title">{project.projectname}</h2>
         <div className="btn-container">
