@@ -43,7 +43,7 @@ const Navbar = () => {
         </div>
       </nav>
       <nav id="hamburger-nav">
-        <div className="logo">John Doe</div>
+        <div className="logo">Huzaifa Ashfaque</div>
         <div className="hamburger-menu">
           <div className="hamburger-icon" onClick={toggleMenu}>
             <span></span>
